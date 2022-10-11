@@ -17,7 +17,7 @@ class IntegrationMyUpwaySensor(IntegrationMyUpwayEntity, SensorEntity):
     @property
     def name(self):
         """Return the name of the sensor."""
-        return f"{DEFAULT_NAME}_{SENSOR}"
+        return f"{DEFAULT_NAME}"
 
     @property
     def native_value(self):

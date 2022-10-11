@@ -1,18 +1,18 @@
-"""Switch platform for integration_blueprint."""
+"""Switch platform for MyUpway."""
 from homeassistant.components.switch import SwitchEntity
 
 from .const import DEFAULT_NAME, DOMAIN, ICON, SWITCH
-from .entity import IntegrationBlueprintEntity
+from .entity import IntegrationMyUpwayEntity
 
 
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices([IntegrationBlueprintBinarySwitch(coordinator, entry)])
+    async_add_devices([IntegrationMyUpwayBinarySwitch(coordinator, entry)])
 
 
-class IntegrationBlueprintBinarySwitch(IntegrationBlueprintEntity, SwitchEntity):
-    """integration_blueprint switch class."""
+class IntegrationMyUpwayBinarySwitch(IntegrationMyUpwayEntity, SwitchEntity):
+    """MyUpway switch class."""
 
     async def async_turn_on(self, **kwargs):  # pylint: disable=unused-argument
         """Turn on the switch."""
