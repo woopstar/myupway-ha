@@ -1,10 +1,13 @@
 {
+  "after_dependencies": [
+    "http"
+  ],
   "domain": "myupway",
   "name": "MyUpway Integration",
   "documentation": "https://github.com/woopstar/myupway-ha",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/woopstar/myupway-ha/issues",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "config_flow": true,
   "codeowners": [
     "@woopstar"
