@@ -1,6 +1,6 @@
 """Constants for integration_myupway."""
 # Base component constants
-NAME = "MyUpway Integration"
+NAME = "MyUpway"
 DOMAIN = "myupway"
 DOMAIN_DATA = f"{DOMAIN}_data"
 VERSION = "0.0.5"

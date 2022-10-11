@@ -6,7 +6,7 @@ upon, to make more awesome stuff.
 
 HAVE FUN! 😎
 
-# MyUpway Integration
+# MyUpway
 
 **This component will set up the following platforms.**
 
