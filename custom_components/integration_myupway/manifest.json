@@ -1,5 +1,5 @@
 {
-  "domain": "MyUpway",
+  "domain": "myupway",
   "name": "MyUpway Integration",
   "documentation": "https://github.com/woopstar/myupway-ha",
   "iot_class": "cloud_polling",

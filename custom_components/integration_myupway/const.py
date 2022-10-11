@@ -1,9 +1,9 @@
 """Constants for integration_myupway."""
 # Base component constants
 NAME = "MyUpway Integration"
-DOMAIN = "MyUpway"
+DOMAIN = "myupway"
 DOMAIN_DATA = f"{DOMAIN}_data"
-VERSION = "0.0.3"
+VERSION = "0.0.5"
 ATTRIBUTION = "Data provided by https://myupway.com/"
 ISSUE_URL = "https://github.com/woopstar/myupway-ha/issues"
 
@@ -21,7 +21,6 @@ CONF_SYSTEMID = "systemid"
 
 # Defaults
 DEFAULT_NAME = DOMAIN
-
 
 STARTUP_MESSAGE = f"""
 -------------------------------------------------------------------

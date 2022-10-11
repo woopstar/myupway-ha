@@ -13,7 +13,6 @@ from .const import (
     PLATFORMS,
 )
 
-
 class MyUpwayFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     """Config flow for MyUpway."""
 

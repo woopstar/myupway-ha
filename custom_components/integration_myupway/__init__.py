@@ -19,6 +19,7 @@ from .api import IntegrationMyUpwayApiClient
 from .const import (
     CONF_PASSWORD,
     CONF_USERNAME,
+    CONF_SYSTEMID,
     DOMAIN,
     PLATFORMS,
     STARTUP_MESSAGE,
@@ -42,6 +43,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
 
     username = entry.data.get(CONF_USERNAME)
     password = entry.data.get(CONF_PASSWORD)
+    systemid = entry.data.get(CONF_SYSTEMID)
 
     session = async_get_clientsession(hass)
     client = IntegrationMyUpwayApiClient(username, password, session)

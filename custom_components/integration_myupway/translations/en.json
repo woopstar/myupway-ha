@@ -3,10 +3,11 @@
         "step": {
             "user": {
                 "title": "MyUpway",
-                "description": "If you need help with the configuration have a look here: https://github.com/custom-components/integration_myupway",
+                "description": "If you need help with the configuration have a look here: https://github.com/woopstar/myupway-ha",
                 "data": {
                     "username": "Username",
-                    "password": "Password"
+                    "password": "Password",
+                    "systemid": "System ID",
                 }
             }
         },
@@ -21,9 +22,7 @@
         "step": {
             "user": {
                 "data": {
-                    "binary_sensor": "Binary sensor enabled",
                     "sensor": "Sensor enabled",
-                    "switch": "Switch enabled"
                 }
             }
         }
