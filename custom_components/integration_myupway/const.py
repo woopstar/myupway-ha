@@ -12,8 +12,7 @@ ICON = "mdi:format-quote-close"
 
 # Platforms
 SENSOR = "sensor"
-SWITCH = "switch"
-PLATFORMS = [SENSOR, SWITCH]
+PLATFORMS = [SENSOR]
 
 # Configuration and options
 CONF_ENABLED = "enabled"

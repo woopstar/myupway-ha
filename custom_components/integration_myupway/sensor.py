@@ -20,19 +20,12 @@ class IntegrationMyUpwaySensor(IntegrationMyUpwayEntity, SensorEntity):
 
     @property
     def device_state_attributes(self):
-        """Return the state attributes of the sensor."""
-        return self.custom_attributes
-
-    def update(self):
         attributes = {}
         attributes['mac'] = 'some data'
         attributes['sn'] = 'some other data'
         self.custom_attributes = attributes
 
-    @property
-    def unique_id(self):
-        """Return the unique id."""
-        return f"{DEFAULT_NAME}_{SENSOR}"
+        return self.custom_attributes
 
     @property
     def name(self):
