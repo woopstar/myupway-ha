@@ -10,18 +10,15 @@ ISSUE_URL = "https://github.com/woopstar/myupway-ha/issues"
 # Icons
 ICON = "mdi:format-quote-close"
 
-# Device classes
-BINARY_SENSOR_DEVICE_CLASS = "connectivity"
-
 # Platforms
-SENSOR = "sensor"
-PLATFORMS = [SENSOR]
+PLATFORMS = "sensor"
 
 
 # Configuration and options
 CONF_ENABLED = "enabled"
 CONF_USERNAME = "username"
 CONF_PASSWORD = "password"
+CONF_SYSTEMID = "systemid"
 
 # Defaults
 DEFAULT_NAME = DOMAIN

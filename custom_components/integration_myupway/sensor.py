@@ -1,4 +1,4 @@
-"""Sensor platform for integration_myupway."""
+"""Sensor platform for MyUpway."""
 from homeassistant.components.sensor import SensorEntity
 
 from .const import DEFAULT_NAME, DOMAIN, ICON, SENSOR
@@ -12,7 +12,7 @@ async def async_setup_entry(hass, entry, async_add_devices):
 
 
 class IntegrationMyUpwaySensor(IntegrationMyUpwayEntity, SensorEntity):
-    """integration_myupway Sensor class."""
+    """MyUpway Sensor class."""
 
     @property
     def name(self):

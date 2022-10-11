@@ -1,8 +1,8 @@
 """
-Custom integration to integrate integration_myupway with Home Assistant.
+Custom integration to integrate MyUpway with Home Assistant.
 
 For more details about this integration, please refer to
-https://github.com/custom-components/integration_myupway
+https://github.com/woopstar/myupway-ha
 """
 import asyncio
 from datetime import timedelta

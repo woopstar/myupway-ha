@@ -8,6 +8,7 @@ from .api import IntegrationMyUpwayApiClient
 from .const import (
     CONF_PASSWORD,
     CONF_USERNAME,
+    CONF_SYSTEMID,
     DOMAIN,
     PLATFORMS,
 )
@@ -28,8 +29,8 @@ class MyUpwayFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         self._errors = {}
 
         # Uncomment the next 2 lines if only a single instance of the integration is allowed:
-        # if self._async_current_entries():
-        #     return self.async_abort(reason="single_instance_allowed")
+        if self._async_current_entries():
+             return self.async_abort(reason="single_instance_allowed")
 
         if user_input is not None:
             valid = await self._test_credentials(
@@ -46,8 +47,9 @@ class MyUpwayFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
 
         user_input = {}
         # Provide defaults for form
-        user_input[CONF_USERNAME] = ""
-        user_input[CONF_PASSWORD] = ""
+        user_input[CONF_USERNAME] = "email@some.com"
+        user_input[CONF_PASSWORD] = "xyz"
+        user_input[CONF_SYSTEMID] = "138609"
 
         return await self._show_config_form(user_input)
 
@@ -64,6 +66,7 @@ class MyUpwayFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 {
                     vol.Required(CONF_USERNAME, default=user_input[CONF_USERNAME]): str,
                     vol.Required(CONF_PASSWORD, default=user_input[CONF_PASSWORD]): str,
+                    vol.Required(CONF_SYSTEMID, default=user_input[CONF_SYSTEMID]): str,
                 }
             ),
             errors=self._errors,
