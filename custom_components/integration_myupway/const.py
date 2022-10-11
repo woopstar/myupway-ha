@@ -11,7 +11,9 @@ ISSUE_URL = "https://github.com/woopstar/myupway-ha/issues"
 ICON = "mdi:format-quote-close"
 
 # Platforms
-PLATFORMS = "sensor"
+SENSOR = "sensor"
+SWITCH = "switch"
+PLATFORMS = [SENSOR, SWITCH]
 
 # Configuration and options
 CONF_ENABLED = "enabled"
