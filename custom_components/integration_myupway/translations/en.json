@@ -7,7 +7,7 @@
                 "data": {
                     "username": "Username",
                     "password": "Password",
-                    "systemid": "System ID",
+                    "systemid": "System ID"
                 }
             }
         },
@@ -22,7 +22,7 @@
         "step": {
             "user": {
                 "data": {
-                    "sensor": "Sensor enabled",
+                    "sensor": "Sensor enabled"
                 }
             }
         }
