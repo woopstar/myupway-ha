@@ -14,18 +14,26 @@ async def async_setup_entry(hass, entry, async_add_devices):
 class IntegrationMyUpwaySensor(IntegrationMyUpwayEntity, SensorEntity):
     """MyUpway Sensor class."""
 
-    def __init__(self):
+    def __init__(self, hass, config):
         """Initialize the sensor."""
-        self.custom_attributes = {}
+        self._hass = hass
+        self._hass.custom_attributes = {}
 
     @property
     def device_state_attributes(self):
+        """Return the state attributes of the sensor."""
+        return self._hass.custom_attributes
+
+    def update(self):
         attributes = {}
         attributes['mac'] = 'some data'
         attributes['sn'] = 'some other data'
-        self.custom_attributes = attributes
+        self._hass.custom_attributes = attributes
 
-        return self.custom_attributes
+    @property
+    def unique_id(self):
+        """Return the unique id."""
+        return f"{DEFAULT_NAME}_{SENSOR}"
 
     @property
     def name(self):
