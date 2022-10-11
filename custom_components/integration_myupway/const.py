@@ -3,7 +3,7 @@
 NAME = "MyUpway Integration"
 DOMAIN = "MyUpway"
 DOMAIN_DATA = f"{DOMAIN}_data"
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 ATTRIBUTION = "Data provided by https://myupway.com/"
 ISSUE_URL = "https://github.com/woopstar/myupway-ha/issues"
 
