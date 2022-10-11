@@ -8,8 +8,12 @@ from .entity import IntegrationMyUpwayEntity
 async def async_setup_entry(hass, entry, async_add_devices):
     """Setup sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
-    async_add_devices([IntegrationMyUpwaySensor(coordinator, entry)])
 
+    sensors = []
+    sensors.append(IntegrationMyUpwaySensor(coordinator, entry))
+    sensors.append(IntegrationMyUpwaySensor(coordinator, entry))
+
+    async_add_devices(sensors)
 
 class IntegrationMyUpwaySensor(IntegrationMyUpwayEntity, SensorEntity):
     """MyUpway Sensor class."""

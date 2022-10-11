@@ -1,7 +1,7 @@
 # Notice
 
 The component and platforms in this repository are not meant to be used by a
-user, but as a "myupway" that custom component developers can build
+user, but as a "MyUpway" that custom component developers can build
 upon, to make more awesome stuff.
 
 HAVE FUN! 😎
@@ -12,7 +12,7 @@ HAVE FUN! 😎
 
 Platform | Description
 -- | --
-`sensor` | Show info from myupway API.
+`sensor` | Show info from MyUpway API.
 
 ## HACS
 
