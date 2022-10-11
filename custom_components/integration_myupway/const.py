@@ -1,7 +1,7 @@
 """Constants for integration_myupway."""
 # Base component constants
 NAME = "MyUpway Integration"
-DOMAIN = "integration_myupway"
+DOMAIN = "MyUpway"
 DOMAIN_DATA = f"{DOMAIN}_data"
 VERSION = "0.0.2"
 ATTRIBUTION = "Data provided by https://myupway.com/"
@@ -12,7 +12,6 @@ ICON = "mdi:format-quote-close"
 
 # Platforms
 PLATFORMS = "sensor"
-
 
 # Configuration and options
 CONF_ENABLED = "enabled"
